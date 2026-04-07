@@ -1,0 +1,76 @@
+{
+  "name": "logistics_inquiry",
+  "title": "询价",
+  "schemas": [
+    {
+      "name": "goodsName",
+      "title": "货物名称",
+      "type": "String"
+    },
+    {
+      "name": "goodsType",
+      "title": "货物类型",
+      "type": "String"
+    },
+    {
+      "name": "weight",
+      "title": "货物重量",
+      "type": "Number"
+    },
+    {
+      "name": "length",
+      "title": "长度",
+      "type": "Number"
+    },
+    {
+      "name": "width",
+      "title": "宽度",
+      "type": "Number"
+    },
+    {
+      "name": "height",
+      "title": "高度",
+      "type": "Number"
+    },
+    {
+      "name": "quantity",
+      "title": "货物数量",
+      "type": "Number"
+    },
+    {
+      "name": "destination",
+      "title": "目的地",
+      "type": "String"
+    },
+    {
+      "name": "shippingType",
+      "title": "运输方式",
+      "type": "String"
+    },
+    {
+      "name": "expectedDate",
+      "title": "期望发货日期",
+      "type": "Date"
+    },
+    {
+      "name": "contactName",
+      "title": "联系人姓名",
+      "type": "String"
+    },
+    {
+      "name": "contactPhone",
+      "title": "联系电话",
+      "type": "String"
+    },
+    {
+      "name": "contactEmail",
+      "title": "联系邮箱",
+      "type": "Email"
+    },
+    {
+      "name": "remarks",
+      "title": "其他说明",
+      "type": "MultiLineString"
+    }
+  ]
+}
