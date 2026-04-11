@@ -1,7 +1,7 @@
 // @ts-ignore;
 import React from 'react';
 // @ts-ignore;
-import { Ship, Plane, Armchair, Download, Help, Package, Bell, DollarSign, FileText, Headphones } from 'lucide-react';
+import { Ship, Plane, Armchair, Download, Help, Package, Bell, DollarSign, FileText, Headphones, Edit, Calendar } from 'lucide-react';
 // @ts-ignore;
 import { useToast } from '@/components/ui';
 
@@ -130,34 +130,51 @@ const Home = props => {
           <h2 className="text-sm font-bold">常用服务</h2>
         </div>
 
-        <div className="grid grid-cols-3 gap-2">
-          {/* 海运待认领 */}
-          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('海运待认领')}>
+        <div className="grid grid-cols-4 gap-2">
+          {/* 海运认领 */}
+          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('海运认领')}>
             <div className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded mb-1">
               <Download className="text-gray-700" size={20} />
             </div>
-            <div className="text-xs text-center">海运待认领</div>
+            <div className="text-xs text-center">海运认领</div>
           </div>
-          {/* 空运待确认 */}
-          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('空运待确认')}>
+          {/* 海运自填 */}
+          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('海运自填')}>
+            <div className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded mb-1">
+              <Edit className="text-gray-700" size={20} />
+            </div>
+            <div className="text-xs text-center">海运自填</div>
+          </div>
+          {/* 空运认领 */}
+          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('空运认领')}>
             <div className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded mb-1">
               <Help className="text-gray-700" size={20} />
             </div>
-            <div className="text-xs text-center">空运待确认</div>
+            <div className="text-xs text-center">空运认领</div>
           </div>
-          {/* 我的运单 */}
-          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('我的运单')}>
+          {/* 空运自填 */}
+          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('空运自填')}>
             <div className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded mb-1">
-              <Package className="text-gray-700" size={20} />
+              <FileText className="text-gray-700" size={20} />
             </div>
-            <div className="text-xs text-center">我的运单</div>
+            <div className="text-xs text-center">空运自填</div>
           </div>
-          {/* 公告消息 */}
-          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('公告消息')}>
+          {/* 公告信息 */}
+          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => $w.utils.navigateTo({
+          pageId: 'Announcements',
+          params: {}
+        })}>
             <div className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded mb-1">
               <Bell className="text-gray-700" size={20} />
             </div>
-            <div className="text-xs text-center">公告消息</div>
+            <div className="text-xs text-center">公告信息</div>
+          </div>
+          {/* 船期信息 */}
+          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('船期信息')}>
+            <div className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded mb-1">
+              <Calendar className="text-gray-700" size={20} />
+            </div>
+            <div className="text-xs text-center">船期信息</div>
           </div>
           {/* 询价 */}
           <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => $w.utils.navigateTo({
@@ -169,12 +186,15 @@ const Home = props => {
             </div>
             <div className="text-xs text-center">询价</div>
           </div>
-          {/* 船期信息 */}
-          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('船期信息')}>
+          {/* 我的运单 */}
+          <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => $w.utils.navigateTo({
+          pageId: 'Orders',
+          params: {}
+        })}>
             <div className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded mb-1">
-              <FileText className="text-gray-700" size={20} />
+              <Package className="text-gray-700" size={20} />
             </div>
-            <div className="text-xs text-center">船期信息</div>
+            <div className="text-xs text-center">我的运单</div>
           </div>
         </div>
       </div>
