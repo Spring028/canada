@@ -8,7 +8,7 @@ const ServiceCard = ({
   subtitle2,
   onClick
 }) => {
-  return <div className="bg-[#3B82F6] rounded-xl p-2 text-center cursor-pointer hover:bg-[#2563EB] transition-transform hover:-translate-y-1" onClick={onClick}>
+  return <div className="bg-[#60A5FA] rounded-xl p-2 text-center cursor-pointer hover:bg-[#3B82F6] transition-transform hover:-translate-y-1" onClick={onClick}>
       <div className="mb-1 flex justify-center">
         {React.cloneElement(icon, {
         className: 'text-white',
