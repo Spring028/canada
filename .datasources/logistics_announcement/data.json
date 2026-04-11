@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "1",
+    "title": "违禁品零容忍政策公告",
+    "publishDate": "2024-06-21",
+    "type": "important",
+    "content": "为保障绝大多数客人的权益，也为杜绝海运运输违禁品的现象，提升海运服务的品质，今日起我司将对违禁品采取零容忍政策。",
+    "iconType": "AlertTriangle",
+    "createdAt": 1775311461206,
+    "updatedAt": 1775311461206
+  },
+  {
+    "_id": "2",
+    "title": "海运航线调整通知",
+    "publishDate": "2024-06-18",
+    "type": "info",
+    "content": "由于港口容量调整，从本月开始部分航线发船时间将有所调整，请及时关注船期信息。",
+    "iconType": "Info",
+    "createdAt": 1775311461206,
+    "updatedAt": 1775311461206
+  },
+  {
+    "_id": "3",
+    "title": "端午节放假安排",
+    "publishDate": "2024-06-10",
+    "type": "normal",
+    "content": "端午节期间客服服务时间调整为9:00-18:00，紧急情况请拨打热线电话。",
+    "iconType": "Bell",
+    "createdAt": 1775311461206,
+    "updatedAt": 1775311461206
+  },
+  {
+    "_id": "4",
+    "title": "新用户优惠活动",
+    "publishDate": "2024-06-05",
+    "type": "promo",
+    "content": "新注册用户首单享9折优惠，活动截止至6月30日，欢迎参与。",
+    "iconType": "Star",
+    "createdAt": 1775311461206,
+    "updatedAt": 1775311461206
+  }
+]

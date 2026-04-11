@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "1",
+    "orderNo": "TT20240621001",
+    "shippingType": "海运拼箱",
+    "status": "已认领",
+    "startDate": "2024-06-21",
+    "origin": "深圳",
+    "destination": "多伦多",
+    "weight": "25kg",
+    "progress": 40,
+    "createdAt": 1775311461206,
+    "updatedAt": 1775311461206
+  },
+  {
+    "_id": "2",
+    "orderNo": "TT20240620002",
+    "shippingType": "空运",
+    "status": "待确认",
+    "startDate": "2024-06-20",
+    "origin": "广州",
+    "destination": "温哥华",
+    "weight": "5kg",
+    "progress": 20,
+    "createdAt": 1775311461206,
+    "updatedAt": 1775311461206
+  },
+  {
+    "_id": "3",
+    "orderNo": "ER20240615003",
+    "shippingType": "家具专线",
+    "status": "运输中",
+    "startDate": "2024-06-15",
+    "origin": "上海",
+    "destination": "蒙特利尔",
+    "weight": "80kg",
+    "progress": 70,
+    "createdAt": 1775311461206,
+    "updatedAt": 1775311461206
+  }
+]

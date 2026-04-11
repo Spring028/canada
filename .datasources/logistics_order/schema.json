@@ -1,0 +1,46 @@
+{
+  "name": "logistics_order",
+  "title": "运单",
+  "schemas": [
+    {
+      "name": "orderNo",
+      "title": "运单号",
+      "type": "String"
+    },
+    {
+      "name": "shippingType",
+      "title": "运输类型",
+      "type": "String"
+    },
+    {
+      "name": "status",
+      "title": "状态",
+      "type": "String"
+    },
+    {
+      "name": "startDate",
+      "title": "开始日期",
+      "type": "Date"
+    },
+    {
+      "name": "origin",
+      "title": "起始地",
+      "type": "String"
+    },
+    {
+      "name": "destination",
+      "title": "目的地",
+      "type": "String"
+    },
+    {
+      "name": "weight",
+      "title": "货物重量",
+      "type": "String"
+    },
+    {
+      "name": "progress",
+      "title": "运输进度",
+      "type": "Number"
+    }
+  ]
+}
