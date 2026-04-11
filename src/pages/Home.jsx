@@ -133,29 +133,29 @@ const Home = props => {
         <div className="grid grid-cols-4 gap-2">
           {/* 海运认领 */}
           <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('海运认领')}>
-            <div className="w-10 h-10 flex items-center justify-center bg-blue-100 rounded mb-1">
-              <Hand className="text-blue-600" size={20} />
+            <div className="w-10 h-10 flex items-center justify-center bg-blue-600 rounded mb-1">
+              <Hand className="text-white" size={20} />
             </div>
             <div className="text-xs text-center">海运认领</div>
           </div>
           {/* 海运自填 */}
           <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('海运自填')}>
-            <div className="w-10 h-10 flex items-center justify-center bg-blue-100 rounded mb-1">
-              <Edit className="text-blue-600" size={20} />
+            <div className="w-10 h-10 flex items-center justify-center bg-blue-600 rounded mb-1">
+              <Edit className="text-white" size={20} />
             </div>
             <div className="text-xs text-center">海运自填</div>
           </div>
           {/* 空运认领 */}
           <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('空运认领')}>
-            <div className="w-10 h-10 flex items-center justify-center bg-blue-100 rounded mb-1">
-              <Clipboard className="text-blue-600" size={20} />
+            <div className="w-10 h-10 flex items-center justify-center bg-blue-600 rounded mb-1">
+              <Clipboard className="text-white" size={20} />
             </div>
             <div className="text-xs text-center">空运认领</div>
           </div>
           {/* 空运自填 */}
           <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('空运自填')}>
-            <div className="w-10 h-10 flex items-center justify-center bg-blue-100 rounded mb-1">
-              <ClipboardCheck className="text-blue-600" size={20} />
+            <div className="w-10 h-10 flex items-center justify-center bg-blue-600 rounded mb-1">
+              <ClipboardCheck className="text-white" size={20} />
             </div>
             <div className="text-xs text-center">空运自填</div>
           </div>
@@ -164,15 +164,15 @@ const Home = props => {
           pageId: 'Announcements',
           params: {}
         })}>
-            <div className="w-10 h-10 flex items-center justify-center bg-blue-100 rounded mb-1">
-              <Bell className="text-blue-600" size={20} />
+            <div className="w-10 h-10 flex items-center justify-center bg-blue-600 rounded mb-1">
+              <Bell className="text-white" size={20} />
             </div>
             <div className="text-xs text-center">公告信息</div>
           </div>
           {/* 船期信息 */}
           <div className="flex flex-col items-center p-2 cursor-pointer hover:bg-gray-100 rounded" onClick={() => handleToolClick('船期信息')}>
-            <div className="w-10 h-10 flex items-center justify-center bg-blue-100 rounded mb-1">
-              <Anchor className="text-blue-600" size={20} />
+            <div className="w-10 h-10 flex items-center justify-center bg-blue-600 rounded mb-1">
+              <Anchor className="text-white" size={20} />
             </div>
             <div className="text-xs text-center">船期信息</div>
           </div>
@@ -181,8 +181,8 @@ const Home = props => {
           pageId: 'Inquiry',
           params: {}
         })}>
-            <div className="w-10 h-10 flex items-center justify-center bg-blue-100 rounded mb-1">
-              <DollarSign className="text-blue-600" size={20} />
+            <div className="w-10 h-10 flex items-center justify-center bg-blue-600 rounded mb-1">
+              <DollarSign className="text-white" size={20} />
             </div>
             <div className="text-xs text-center">询价</div>
           </div>
@@ -191,8 +191,8 @@ const Home = props => {
           pageId: 'Orders',
           params: {}
         })}>
-            <div className="w-10 h-10 flex items-center justify-center bg-blue-100 rounded mb-1">
-              <List className="text-blue-600" size={20} />
+            <div className="w-10 h-10 flex items-center justify-center bg-blue-600 rounded mb-1">
+              <List className="text-white" size={20} />
             </div>
             <div className="text-xs text-center">我的运单</div>
           </div>
