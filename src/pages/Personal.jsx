@@ -1,7 +1,7 @@
 // @ts-ignore;
 import React from 'react';
 // @ts-ignore;
-import { User, Package, Settings, Phone, Mail, LogOut, ArrowRight } from 'lucide-react';
+import { User, Package, Settings, Phone, Share, LogOut, ChevronRight } from 'lucide-react';
 // @ts-ignore;
 import { Button, Card, Avatar, AvatarImage, AvatarFallback, useToast } from '@/components/ui';
 
@@ -68,55 +68,52 @@ const Personal = props => {
         </div>
       </div>
 
-      {/* 功能菜单 */}
-      <div className="p-4 space-y-4">
-        {/* 运单管理 */}
-        <Card className="cursor-pointer hover:bg-gray-50" onClick={handleOrdersClick}>
-          <div className="p-4 flex items-center">
-            <Package className="text-[#3B82F6] mr-4" size={32} />
-            <div className="flex-1">
-              <h3 className="font-bold text-lg">我的运单</h3>
-              <p className="text-sm text-gray-500">查看和管理所有运单</p>
-            </div>
-            <ArrowRight className="text-gray-500" size={20} />
+      {/* 功能菜单列表 */}
+      <div className="bg-white border-t border-gray-200">
+        {/* 我的运单 */}
+        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50 border-b border-gray-100" onClick={handleOrdersClick}>
+          <Package className="text-[#3B82F6] mr-3" size={24} />
+          <div className="flex-1">
+            <h3 className="text-base font-medium">我的运单</h3>
           </div>
-        </Card>
+          <ChevronRight className="text-[#3B82F6]" size={20} />
+        </div>
 
         {/* 联系方式 */}
-        <Card className="cursor-pointer hover:bg-gray-50" onClick={handleContactClick}>
-          <div className="p-4 flex items-center">
-            <Phone className="text-[#3B82F6] mr-4" size={32} />
-            <div className="flex-1">
-              <h3 className="font-bold text-lg">联系方式</h3>
-              <p className="text-sm text-gray-500">客服热线和在线客服</p>
-            </div>
-            <ArrowRight className="text-gray-500" size={20} />
+        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50 border-b border-gray-100" onClick={handleContactClick}>
+          <Phone className="text-[#3B82F6] mr-3" size={24} />
+          <div className="flex-1">
+            <h3 className="text-base font-medium">联系方式</h3>
           </div>
-        </Card>
+          <ChevronRight className="text-[#3B82F6]" size={20} />
+        </div>
 
-        {/* 邮箱设置 */}
-        <Card className="cursor-pointer hover:bg-gray-50">
-          <div className="p-4 flex items-center">
-            <Mail className="text-[#3B82F6] mr-4" size={32} />
-            <div className="flex-1">
-              <h3 className="font-bold text-lg">邮箱设置</h3>
-              <p className="text-sm text-gray-500">管理邮箱通知</p>
-            </div>
-            <ArrowRight className="text-gray-500" size={20} />
+        {/* 分享应用 */}
+        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50 border-b border-gray-100">
+          <Share className="text-[#3B82F6] mr-3" size={24} />
+          <div className="flex-1">
+            <h3 className="text-base font-medium">分享应用</h3>
           </div>
-        </Card>
+          <ChevronRight className="text-[#3B82F6]" size={20} />
+        </div>
 
         {/* 关于我们 */}
-        <Card className="cursor-pointer hover:bg-gray-50">
-          <div className="p-4 flex items-center">
-            <User className="text-[#3B82F6] mr-4" size={32} />
-            <div className="flex-1">
-              <h3 className="font-bold text-lg">关于我们</h3>
-              <p className="text-sm text-gray-500">了解E.R.Bridge服务</p>
-            </div>
-            <ArrowRight className="text-gray-500" size={20} />
+        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50 border-b border-gray-100">
+          <User className="text-[#3B82F6] mr-3" size={24} />
+          <div className="flex-1">
+            <h3 className="text-base font-medium">关于我们</h3>
           </div>
-        </Card>
+          <ChevronRight className="text-[#3B82F6]" size={20} />
+        </div>
+
+        {/* 退出登录 */}
+        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50" onClick={handleLogout}>
+          <LogOut className="text-[#3B82F6] mr-3" size={24} />
+          <div className="flex-1">
+            <h3 className="text-base font-medium">退出登录</h3>
+          </div>
+          <ChevronRight className="text-[#3B82F6]" size={20} />
+        </div>
       </div>
 
       {/* 退出登录 */}
