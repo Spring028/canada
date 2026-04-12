@@ -1,7 +1,7 @@
 // @ts-ignore;
 import React from 'react';
 // @ts-ignore;
-import { User, Package, Settings, Phone, Share, LogOut, ChevronRight } from 'lucide-react';
+import { User, Package, Settings, Phone, Share, LogOut, ChevronRight, MapPin, UserCircle } from 'lucide-react';
 // @ts-ignore;
 import { Button, Card, Avatar, AvatarImage, AvatarFallback, useToast } from '@/components/ui';
 
@@ -70,29 +70,38 @@ const Personal = props => {
 
       {/* 功能菜单列表 */}
       <div className="bg-white border-t border-gray-200">
-        {/* 我的运单 */}
-        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50 border-b border-gray-100" onClick={handleOrdersClick}>
-          <Package className="text-[#3B82F6] mr-3" size={24} />
+        {/* 个人资料 */}
+        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50 border-b border-gray-100">
+          <UserCircle className="text-[#3B82F6] mr-3" size={24} />
           <div className="flex-1">
-            <h3 className="text-base font-medium">我的运单</h3>
+            <h3 className="text-base font-medium">个人资料</h3>
           </div>
           <ChevronRight className="text-[#3B82F6]" size={20} />
         </div>
 
-        {/* 联系方式 */}
+        {/* 加拿大默认仓库 */}
+        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50 border-b border-gray-100">
+          <MapPin className="text-[#3B82F6] mr-3" size={24} />
+          <div className="flex-1">
+            <h3 className="text-base font-medium">加拿大默认仓库</h3>
+          </div>
+          <ChevronRight className="text-[#3B82F6]" size={20} />
+        </div>
+
+        {/* 特殊空运地址管理 */}
+        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50 border-b border-gray-100">
+          <Package className="text-[#3B82F6] mr-3" size={24} />
+          <div className="flex-1">
+            <h3 className="text-base font-medium">特殊空运地址管理</h3>
+          </div>
+          <ChevronRight className="text-[#3B82F6]" size={20} />
+        </div>
+
+        {/* 客服联系方式 */}
         <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50 border-b border-gray-100" onClick={handleContactClick}>
           <Phone className="text-[#3B82F6] mr-3" size={24} />
           <div className="flex-1">
-            <h3 className="text-base font-medium">联系方式</h3>
-          </div>
-          <ChevronRight className="text-[#3B82F6]" size={20} />
-        </div>
-
-        {/* 分享应用 */}
-        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50 border-b border-gray-100">
-          <Share className="text-[#3B82F6] mr-3" size={24} />
-          <div className="flex-1">
-            <h3 className="text-base font-medium">分享应用</h3>
+            <h3 className="text-base font-medium">客服联系方式</h3>
           </div>
           <ChevronRight className="text-[#3B82F6]" size={20} />
         </div>
@@ -107,21 +116,22 @@ const Personal = props => {
         </div>
 
         {/* 退出登录 */}
-        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50" onClick={handleLogout}>
+        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50 border-b border-gray-100" onClick={handleLogout}>
           <LogOut className="text-[#3B82F6] mr-3" size={24} />
           <div className="flex-1">
             <h3 className="text-base font-medium">退出登录</h3>
           </div>
           <ChevronRight className="text-[#3B82F6]" size={20} />
         </div>
-      </div>
 
-      {/* 退出登录 */}
-      <div className="p-4">
-        <Button variant="destructive" className="w-full" onClick={handleLogout}>
-          <LogOut className="mr-2" size={20} />
-          退出登录
-        </Button>
+        {/* 分享应用 */}
+        <div className="flex items-center p-4 cursor-pointer hover:bg-gray-50">
+          <Share className="text-[#3B82F6] mr-3" size={24} />
+          <div className="flex-1">
+            <h3 className="text-base font-medium">分享应用</h3>
+          </div>
+          <ChevronRight className="text-[#3B82F6]" size={20} />
+        </div>
       </div>
 
       {/* 底部导航栏 */}
